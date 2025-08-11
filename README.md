@@ -293,16 +293,6 @@ conda install -c conda-forge gmsh
 - **Modos Quasi-Normales**: Berti et al. (2009) "Eigenvalues and eigenfunctions of spin-weighted spheroidal harmonics"
 - **Agujeros Negros**: Wald "General Relativity", Misner-Thorne-Wheeler "Gravitation"
 
-## 👥 Contribuciones
-
-Este proyecto implementa las mejoras técnicas solicitadas:
-
-1. **✅ Formulación de primer orden completa**
-2. **✅ Condiciones de frontera Sommerfeld físicamente correctas**  
-3. **✅ Arquitectura modular y extensible**
-4. **✅ Compatibilidad con frameworks modernos**
-5. **✅ Métodos numéricos de alto orden**
-6. **✅ Validación y testing completo**
 
 ---
 
