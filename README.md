@@ -4,7 +4,7 @@
 
 PSYOP es un simulador de campos escalares evolucionando en fondos de agujeros negros usando elementos finitos. El proyecto ha sido completamente renovado con una arquitectura modular avanzada y métodos numéricos de alto orden.
 
-## 🚀 Mejoras Implementadas (Versión 2.0)
+##  Mejoras Implementadas (Versión 2.0)
 
 ### **Mejora 1: Formulación de Primer Orden con SSP-RK3**
 - **Sistema de primer orden**: (φ, Π) donde Π = ∂φ/∂t
@@ -23,7 +23,7 @@ PSYOP es un simulador de campos escalares evolucionando en fondos de agujeros ne
 - **Potenciales generalizados**: Higgs, cuadrático, sombrero mexicano
 - **Condiciones iniciales flexibles**: Gaussian bump, ondas planas, etc.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 PSYOP/
@@ -43,7 +43,7 @@ PSYOP/
 └── README.md                 # Esta documentación
 ```
 
-## 🛠 Instalación
+## Instalación
 
 ### Opción 1: FEniCS Legacy (Recomendado para estabilidad)
 ```bash
@@ -88,11 +88,11 @@ python test_dual_frameworks.py
 ```
 
 **Ventajas de la configuración dual:**
-- ✅ Máxima compatibilidad y flexibilidad
-- ✅ Migración gradual FEniCS → DOLFINx
-- ✅ Validación cruzada de resultados
-- ✅ Acceso a todas las características
-- ✅ Framework detection automático
+- Máxima compatibilidad y flexibilidad
+- Migración gradual FEniCS → DOLFINx
+- Validación cruzada de resultados
+- Acceso a todas las características
+- Framework detection automático
 
 ### Verificación de la instalación
 ```bash
@@ -103,7 +103,7 @@ python test_standalone_logic.py
 python test_complete_system.py
 ```
 
-## 🏃‍♂️ Uso Rápido
+## Uso Rápido
 
 ### Simulación básica
 ```bash
@@ -138,7 +138,7 @@ sim_params = {
 }
 ```
 
-## 🧮 Física y Métodos Numéricos
+## Física y Métodos Numéricos
 
 ### Ecuaciones Fundamentales
 
@@ -175,7 +175,7 @@ dt = CFL_factor × h_min / c_max
 ```
 donde `h_min` es el tamaño mínimo de celda y `c_max = 1` (velocidad de la luz).
 
-## 📊 Características Avanzadas
+##  Características Avanzadas
 
 ### Generación de Mallas
 - **Gmsh**: Mallas esféricas con etiquetas de frontera automáticas
@@ -223,7 +223,7 @@ El solver principal está en `solver_first_order.py`. Métodos clave:
 - `_setup_sommerfeld_bc()`: Condiciones de frontera
 - `_compute_rhs()`: Evaluación del lado derecho
 
-## 📈 Resultados y Validación
+## Resultados y Validación
 
 ### Salidas del programa
 - **Campos finales**: φ y Π guardados en formato VTK/XDMF
@@ -242,7 +242,7 @@ results/
 └── qnm_spectrum.png       # Espectro de modos quasi-normales
 ```
 
-## ⚡ Rendimiento
+##  Rendimiento
 
 ### Optimizaciones implementadas
 - **Matriz de masa precalculada**: Factorización reutilizada
@@ -255,7 +255,7 @@ results/
 - **Mesh 20³ elementos**: ~10-30 segundos por unidad de tiempo físico
 - **Escalabilidad**: Excelente con número de cores (PETSc paralelo)
 
-## 🐛 Solución de Problemas
+##  Solución de Problemas
 
 ### Error común: "Import could not be resolved"
 **Causa**: FEniCS/DOLFINx no instalado
@@ -281,7 +281,7 @@ conda install -c conda-forge gmsh
 **Causa**: Malla demasiado fina
 **Solución**: Aumentar `resolution` en parámetros de malla
 
-## 📚 Referencias Técnicas
+## Referencias Técnicas
 
 ### Métodos numéricos
 - **SSP-RK3**: Gottlieb et al. (2001) "Strong Stability-Preserving High-Order Time Discretization Methods"
