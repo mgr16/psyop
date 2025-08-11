@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "mesh": { "type": "gmsh", "R": 15.0, "lc": 0.75 },
+  "metric": { "type": "flat", "M": 1.0 },
+  "solver": {
+    "degree": 1,
+    "cfl": 0.30,
+    "potential_type": "higgs",
+    "potential_params": { "m_squared": 1.0, "lambda_coupling": 0.1 },
+    "sponge": { "enabled": true, "r_start": 12.0, "strength": 0.15 },
+    "sommerfeld": true
+  },
+  "initial_conditions": {
+    "type": "gaussian",
+    "A": 0.01,
+    "r0": 10.0,
+    "w": 3.0,
+    "v0": 1.0
+  },
+  "evolution": { "t_end": 50.0, "output_every": 10, "checkpoint_every": 100 },
+  "output": { "dir": "results", "qnm_analysis": true, "save_series": true }
+}

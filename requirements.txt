@@ -1,0 +1,8 @@
+numpy>=1.24
+scipy>=1.10
+mpi4py>=3.1
+petsc4py>=3.19
+gmsh>=4.11
+# fenics and/or dolfinx are required but recommended via conda:
+#   conda install -c conda-forge fenics
+#   conda install -c conda-forge dolfinx
